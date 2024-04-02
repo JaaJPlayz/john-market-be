@@ -11,7 +11,7 @@ const getAllProducts = async () => {
 
 const getProductById = async (id: string) => {
   const products = await getAllProducts()
-  return products.find((product: any) => product.id === +id)
+  return products.find((product: any) => product.id === Number(id))
 }
 
 export default {

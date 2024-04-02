@@ -1,13 +1,12 @@
-import express from "express"
-import { Request, Response } from "express"
-import productController from "../controller/product.controller"
+import express, { Request, Response } from 'express'
+import productController from '../controller/product.controller'
 
 const productsRouter = express.Router()
 
 // GET all products
-productsRouter.get("/", async (req: Request, res: Response) => {
-  const products = await productController.getAllProducts()
-  res.json(products)
-})
+productsRouter.get('/', productController.getAllProducts)
+
+// GET product by id
+productsRouter.get('/:id', productController.getProductById)
 
 export default productsRouter

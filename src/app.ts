@@ -3,13 +3,14 @@ import { Request, Response } from "express";
 import productsRouter from "./routes/products.route";
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World!");
+app.get("/", (_req: Request, res: Response) => {
+  res.json({ message: "I am alive and ready to work! 🚀" });
 });
 
 app.use("/products", productsRouter);
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });

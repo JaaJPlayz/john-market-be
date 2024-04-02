@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "type": "Fruit",
+    "price": 1.99
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "type": "Fruit",
+    "price": 0.99
+  },
+  {
+    "id": 3,
+    "name": "Orange",
+    "type": "Fruit",
+    "price": 1.49
+  },
+  {
+    "id": 4,
+    "name": "Carrot",
+    "type": "Vegetable",
+    "price": 0.49
+  },
+  {
+    "id": 5,
+    "name": "Broccoli",
+    "type": "Vegetable",
+    "price": 1.99
+  },
+  {
+    "id": 6,
+    "name": "Cucumber",
+    "type": "Vegetable",
+    "price": 0.99
+  },
+  {
+    "id": 7,
+    "name": "Milk",
+    "type": "Dairy",
+    "price": 2.99
+  },
+  {
+    "id": 8,
+    "name": "Cheese",
+    "type": "Dairy",
+    "price": 3.99
+  },
+  {
+    "id": 9,
+    "name": "Yogurt",
+    "type": "Dairy",
+    "price": 1.99
+  },
+  {
+    "id": 10,
+    "name": "Chicken",
+    "type": "Meat",
+    "price": 5.99
+  },
+  {
+    "id": 11,
+    "name": "Beef",
+    "type": "Meat",
+    "price": 7.99
+  },
+  {
+    "id": 12,
+    "name": "Pork",
+    "type": "Meat",
+    "price": 6.99
+  },
+  {
+    "id": 13,
+    "name": "Salmon",
+    "type": "Fish",
+    "price": 9.99
+  },
+  {
+    "id": 14,
+    "name": "Tuna",
+    "type": "Fish",
+    "price": 8.99
+  },
+  {
+    "id": 15,
+    "name": "Shrimp",
+    "type": "Fish",
+    "price": 10.99
+  },
+  {
+    "id": 16,
+    "name": "Pasta",
+    "type": "Grain",
+    "price": 1.99
+  },
+  {
+    "id": 17,
+    "name": "Rice",
+    "type": "Grain",
+    "price": 2.99
+  },
+  {
+    "id": 18,
+    "name": "Bread",
+    "type": "Grain",
+    "price": 1.99
+  },
+  {
+    "id": 19,
+    "name": "Cereal",
+    "type": "Grain",
+    "price": 3.99
+  },
+  {
+    "id": 20,
+    "name": "Soda",
+    "type": "Beverage",
+    "price": 1.99
+  },
+  {
+    "id": 21,
+    "name": "Juice",
+    "type": "Beverage",
+    "price": 2.99
+  },
+  {
+    "id": 22,
+    "name": "Water",
+    "type": "Beverage",
+    "price": 0.99
+  },
+  {
+    "id": 23,
+    "name": "Beer",
+    "type": "Beverage",
+    "price": 5.99
+  },
+  {
+    "id": 24,
+    "name": "Wine",
+    "type": "Beverage",
+    "price": 9.99
+  },
+  {
+    "id": 25,
+    "name": "Chips",
+    "type": "Snack",
+    "price": 1.99
+  },
+  {
+    "id": 26,
+    "name": "Cookies",
+    "type": "Snack",
+    "price": 2.99
+  },
+  {
+    "id": 27,
+    "name": "Candy",
+    "type": "Snack",
+    "price": 0.99
+  },
+  {
+    "id": 28,
+    "name": "Ice Cream",
+    "type": "Snack",
+    "price": 3.99
+  }
+]

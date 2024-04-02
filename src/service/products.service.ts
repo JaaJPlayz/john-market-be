@@ -2,25 +2,25 @@ import productModel from '../model/products.model'
 
 const getAllProducts = async () => {
   const products = await productModel.getAllProducts()
-  return products
+  return { status: 200, products }
 }
 
 const getProductById = async (id: string) => {
   if (!id) {
-    throw new Error('ID is required')
+    return { status: 400, message: 'ID is required' }
   }
 
   if (isNaN(Number(id))) {
-    throw new Error('ID must be a number')
+    return { status: 400, message: 'ID must be a number' }
   }
 
   const product = await productModel.getProductById(id)
 
   if (!product) {
-    throw new Error('Product not found')
+    return { status: 404, message: 'Product not found' }
   }
 
-  return product
+  return {status: 200, product}
 }
 
 export default {

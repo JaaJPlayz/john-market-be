@@ -1,5 +1,5 @@
 import productsService from '../service/products.service'
-import { type Request, type Response } from 'express'
+import { Request, Response } from 'express'
 
 const getAllProducts = async (req: Request, res: Response) => {
   const { status, products } = await productsService.getAllProducts()
@@ -15,7 +15,17 @@ const getProductById = async (req: Request, res: Response) => {
   res.status(status).json({ "data": product })
 }
 
+const getProductByQuery = async (req: Request, res: Response) => {
+  const { query } = req.params
+  const { status, message, products } = await productsService.getProductByQuery(query)
+  if (message) {
+    return res.status(status).json({ message })
+  }
+  res.status(status).json({ "data": products })
+}
+
 export default {
   getAllProducts,
-  getProductById
+  getProductById,
+  getProductByQuery
 }

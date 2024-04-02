@@ -23,7 +23,22 @@ const getProductById = async (id: string) => {
   return {status: 200, product}
 }
 
+const getProductByQuery = async (query: string) => {
+  if (!query || query.trim() === '') {
+    return { status: 400, message: 'Query is required' }
+  }
+
+  const products = await productModel.getProductByQuery(query)
+
+  if (products.length === 0) {
+    return { status: 404, message: 'Product not found' }
+  }
+
+  return { status: 200, products }
+}
+
 export default {
   getAllProducts,
-  getProductById
+  getProductById,
+  getProductByQuery
 }
